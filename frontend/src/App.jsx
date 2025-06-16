@@ -6,7 +6,7 @@ import ViewNote from './pages/ViewNote'
 
 const App = () => {
   return (
-    <div data-theme="dracula">
+    <div data-theme="forest">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreateNote />} />
