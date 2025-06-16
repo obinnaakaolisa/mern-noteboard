@@ -9,8 +9,8 @@ const App = () => {
     <div data-theme="forest">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/create" element={<CreateNote />} />
-        <Route path="/view/:id" element={<ViewNote />} />        
+        <Route path="/notes/create" element={<CreateNote />} />
+        <Route path="/notes/:id" element={<ViewNote />} />        
       </Routes>
     </div>
   )
