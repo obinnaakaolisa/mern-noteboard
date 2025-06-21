@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { toast } from 'react-hot-toast';
 import axiosInstance from '../lib/axios';
+import { toast } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import RateLimitAlert from '../components/RateLimitAlert';
 import NoteCard from '../components/NoteCard';
