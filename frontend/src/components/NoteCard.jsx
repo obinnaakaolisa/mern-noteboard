@@ -6,7 +6,7 @@ const NoteCard = ({ note }) => {
   return (
     <Link 
         to={ `/notes/${note._id}` }
-        className="card bg-base-100 hover:shadow-lg transition-all duration-200 border-t-4 border-solid border-[#00FF9D] hover:border-[#00ff9dd5] p-4">
+        className="card bg-base-100 hover:shadow-lg transition-all duration-200 border-t-4 border-solid border-[#35bd89] hover:border-[#00FF9D] p-4">
             <div className="card-body">
                 <h3 className="card-title text-base-content">{ note.title }</h3>
                 <p className="text-base-content/70 line-clamp-3">{ note.content }</p>
@@ -15,9 +15,9 @@ const NoteCard = ({ note }) => {
                         { formatDate(new Date(note.createdAt)) }
                     </span>
                     <div className="flex items-center gap-1">
-                        <PenSquareIcon className="size4" />
+                        <PenSquareIcon className="size-4" />
                         <button className="btn btn-ghost btn-xs text-error">
-                            <Trash2Icon className="sixe-4"></Trash2Icon>
+                            <Trash2Icon className="size-4"></Trash2Icon>
                         </button>
                     </div>
                 </div>

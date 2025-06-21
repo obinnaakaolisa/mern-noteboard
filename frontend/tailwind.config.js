@@ -14,6 +14,6 @@ export default {
     daisyui,
   ],
   daisyui: {
-    themes: ["forest", "night", "light", "dark"],
+    themes: ["forest"],
   }
 }
