@@ -1,6 +1,7 @@
 import { ArrowLeftIcon } from "lucide-react";
 import { Link, useNavigate } from "react-router";
 import { useState } from "react";
+import axiosInstance from "../lib/axios";
 import toast from "react-hot-toast";
 import axios from "axios";
 
@@ -27,7 +28,7 @@ const CreateNote = () => {
 
     // Simulate an API call to create a note
     try {
-      await axios.post("http://localhost:2000/api/notes", {
+      await axiosInstance.post("/notes", {
         title: trimmedTitle,
         content: trimmedContent,
       });
